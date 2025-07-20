@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <h2>Interactive Resume Builder</h2>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>✨Interactive Resume Builder✨</h1>
+
+    <div class="container">
+        <form id="resume-form">
+            <h2>Enter Your Information</h2>
+
+            <label>Name:</label>
+            <input type="text" id="name" required>
+
+            <label>Email:</label>
+            <input type="email" id="email" required>
+
+            <label>Phone Number:</label>
+            <input type="tel" id="phone" required>
+
+            <label>Profile Summary:</label>
+            <textarea id="summary" rows="3"></textarea>
+
+            <div id="education-section">
+                <label>Education:</label>
+                <div class="education-entry">
+                    <input type="text" class="education-input" placeholder="Enter education details">
+                </div>
+                <button type="button" id="add-education">Add More Education</button>
+            </div>
+
+            <div id="experience-section">
+                <label>Experience:</label>
+                <div class="experience-entry">
+                    <input type="text" class="experience-input" placeholder="Enter experience details">
+                </div>
+                <button type="button" id="add-experience">Add More Experience</button>
+            </div>
+
+            <label>Skills:</label>
+            <div id="skills">
+                <label><input type="checkbox" value="HTML"> HTML</label>
+                <label><input type="checkbox" value="CSS"> CSS</label>
+                <label><input type="checkbox" value="JavaScript"> JavaScript</label>
+                <label><input type="checkbox" value="python"> Python</label>
+                <label><input type="checkbox" value="java"> java</label>
+                <label><input type="checkbox" value="c++"> c++</label>
+    
+            </div>
+
+            <button type="button" id="clear-form">Clear Form</button>
+        </form>
+
+        <div id="resume-preview">
+            <h2>Live Resume Preview</h2>
+            <p><strong>Name:</strong> <span id="preview-name"></span></p>
+            <p><strong>Email:</strong> <span id="preview-email"></span></p>
+            <p><strong>Phone:</strong> <span id="preview-phone"></span></p>
+            <p><strong>Summary:</strong> <span id="preview-summary"></span></p>
+            <p><strong>Education:</strong> <ul id="preview-education"></ul></p>
+            <p><strong>Experience:</strong> <ul id="preview-experience"></ul></p>
+            <p><strong>Skills:</strong> <span id="preview-skills"></span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
